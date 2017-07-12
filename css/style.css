@@ -1,0 +1,104 @@
+html{
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	margin: 0;
+	padding: 0;
+	/*perspective: 1px;*/
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-x: hidden;
+	/*overflow-y: scroll;*/
+
+}
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-family: 'Acme', sans-serif;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+}
+header{
+	position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+header nav{
+	text-align: center;
+    background: rgba(68, 48, 42, 0.84);
+}
+header nav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li{
+	display: inline-block;    
+    color: #fff;
+    
+}
+header nav ul li a{
+	color: #fff;
+	font-size: 150%;
+	text-decoration: none;	
+	display: inline-block;
+	padding: 16px;
+}
+header nav ul li.active{
+	background: #957a6f;
+}
+
+.main-parallax h1 {	
+	font-family: 'Acme', sans-serif;
+	font-size: 500%;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 8px #4c3f35;
+    font-weight: 400;
+}
+
+.main-parallax h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 400%;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 8px #4c3f35;
+    font-weight: 400;
+}
+
+.main-parallax .slide{
+	position: relative;
+	min-height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+
+}
+
+#home {
+	padding: 25% 10%;
+	background-image: url("../img/bg1.jpg");
+   	background-attachment: fixed; 
+}
+#habitaciones {
+	background-image: url("../img/bg2.jpg");
+   	background-attachment: fixed; 
+}
+#restaurant {
+	background-image: url("../img/bg1.jpg");
+   	background-attachment: fixed; 
+}
+#nosotros {
+	background-image: url("../img/bg2.jpg");
+   	background-attachment: fixed; 
+}
+#contactanos {
+	background-image: url("../img/bg1.jpg");
+   	background-attachment: fixed; 
+}
