@@ -5,7 +5,7 @@ html{
 body {
 	margin: 0;
 	padding: 0;
-	/*perspective: 1px;*/
+	perspective: 1px;
 	transform-style: preserve-3d;
 	height: 100%;
 	overflow-x: hidden;
@@ -53,13 +53,54 @@ header nav ul li.active{
 	background: #957a6f;
 }
 
+form fieldset{
+	border: none;    
+}
+form.form-inline fieldset{
+	display: inline-block;
+}
+form.form-inline label{
+	display: block;
+}
+
+button{
+	border: none;
+    padding: 10px 15px;
+    font-size: 14px;   
+    border-radius: 5px;
+    min-width: 90px;
+    cursor: pointer;
+    background: #CCCCCC;
+    color: #000000;
+}
+
+input{
+	border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.form-section form button {
+	color: #fff;
+    background: #5d1f0b;
+}
+.form-section{
+	background: rgba(144, 83, 83, 0.94);
+	margin-top: 30px;
+}
+
+.form-section label{
+	color: #FFFFFF;
+}
+
+
+
 .main-parallax h1 {	
 	font-family: 'Acme', sans-serif;
-	font-size: 500%;
+    font-size: 600%;
     margin: 0;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 8px #4c3f35;
+    text-shadow: 7px 5px 10px rgb(76, 63, 53);
     font-weight: 400;
 }
 
@@ -81,24 +122,25 @@ header nav ul li.active{
 
 }
 
+.main-parallax .slide {
+	background-attachment: fixed; 
+   	background-repeat: no-repeat;
+   	background-size: 100%;
+}
+
 #home {
 	padding: 25% 10%;
-	background-image: url("../img/bg1.jpg");
-   	background-attachment: fixed; 
+	background-image: url("../img/bg1.jpg");   	
 }
 #habitaciones {
-	background-image: url("../img/bg2.jpg");
-   	background-attachment: fixed; 
+	background-image: url("../img/bg2.jpg"); 
 }
 #restaurant {
 	background-image: url("../img/bg1.jpg");
-   	background-attachment: fixed; 
 }
 #nosotros {
 	background-image: url("../img/bg2.jpg");
-   	background-attachment: fixed; 
 }
 #contactanos {
 	background-image: url("../img/bg1.jpg");
-   	background-attachment: fixed; 
 }
