@@ -30,7 +30,7 @@ header{
 }
 header nav{
 	text-align: center;
-    background: rgba(68, 48, 42, 0.84);
+    background: rgba(45, 45, 45, 1);
 }
 header nav ul{
 	list-style-type: none;
@@ -50,17 +50,28 @@ header nav ul li a{
 	padding: 16px;
 }
 header nav ul li.active{
-	background: #957a6f;
+	background: #d01749;
 }
 
 form fieldset{
-	border: none;    
+	border: none;
+	padding: 0;
+    margin: 0;  
+}
+form.form-inline{
+	padding: 10px;
+	display: inline-block;
+	background: rgba(208, 23, 73, 0.85);   
 }
 form.form-inline fieldset{
 	display: inline-block;
+	margin: 0 7px 0 0;
 }
 form.form-inline label{
 	display: block;
+	text-align: left;
+	font-size: 12px;
+    margin-bottom: 5px;
 }
 
 button{
@@ -79,13 +90,17 @@ input{
     padding: 5px;
 }
 
+.center-align{
+	text-align: center;
+}
+
 .form-section form button {
 	color: #fff;
-    background: #5d1f0b;
+    background: #2b2b2b;
 }
-.form-section{
-	background: rgba(144, 83, 83, 0.94);
+.form-section{	
 	margin-top: 30px;
+    text-align: center;
 }
 
 .form-section label{
@@ -93,7 +108,20 @@ input{
 }
 
 
-
+.button-link{
+	text-decoration: none;
+	border: 2px solid #FFFFFF;
+	background: rgba(0,0,0,0);
+	padding: 10px;
+    color: #FFFFFF;
+    display: inline-block;
+    min-width: 80px;
+    cursor: pointer;
+}
+.button-link:hover{
+	background: #d01749;
+	/*color: #000;*/
+}
 .main-parallax h1 {	
 	font-family: 'Acme', sans-serif;
     font-size: 600%;
@@ -112,6 +140,10 @@ input{
     color: #fff;
     text-shadow: 1px 1px 8px #4c3f35;
     font-weight: 400;
+}
+
+.main-parallax p{
+	margin: 0;
 }
 
 .main-parallax .slide{
@@ -133,14 +165,18 @@ input{
 	background-image: url("../img/bg1.jpg");   	
 }
 #habitaciones {
+	padding: 25% 10%;
 	background-image: url("../img/bg2.jpg"); 
 }
 #restaurant {
-	background-image: url("../img/bg1.jpg");
+	padding: 25% 10%;
+	background-image: url("../img/bg3.jpg");
 }
 #nosotros {
-	background-image: url("../img/bg2.jpg");
+	padding: 25% 10%;
+	background-image: url("../img/bg4.jpg");
 }
 #contactanos {
-	background-image: url("../img/bg1.jpg");
+	padding: 25% 10%;
+	background-image: url("../img/bg5.jpg");
 }
