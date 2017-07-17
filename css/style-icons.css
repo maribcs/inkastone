@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?phae1a');
-  src:  url('fonts/icomoon.eot?phae1a#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?phae1a') format('truetype'),
-    url('fonts/icomoon.woff?phae1a') format('woff'),
-    url('fonts/icomoon.svg?phae1a#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?p0dpfj');
+  src:  url('fonts/icomoon.eot?p0dpfj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?p0dpfj') format('truetype'),
+    url('fonts/icomoon.woff?p0dpfj') format('woff'),
+    url('fonts/icomoon.svg?p0dpfj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,15 +24,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-snowflake-o:before {
+  content: "\f2dc";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-glass:before {
+  content: "\e9a0";
+}
+.icon-glass2:before {
+  content: "\e9a1";
+}
+.icon-spoon-knife:before {
+  content: "\e9a3";
+}
 .icon-facebook2:before {
-  content: "\e907";
+  content: "\ea91";
 }
 .icon-whatsapp:before {
-  content: "\e908";
+  content: "\ea93";
 }
 .icon-twitter:before {
-  content: "\e909";
+  content: "\ea96";
 }
 .icon-youtube2:before {
-  content: "\e90a";
+  content: "\ea9e";
+}
+.icon-iconmonstr-phone-1:before {
+  content: "\e900";
+}
+.icon-iconmonstr-safe-3:before {
+  content: "\e901";
+}
+.icon-iconmonstr-television-12:before {
+  content: "\e902";
 }

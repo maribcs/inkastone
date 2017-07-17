@@ -16,8 +16,11 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #2D2D2D;
 }
-.main-content p, .main-content h1, .main-contenth2, .main-content h3, .main-content h4, .main-content h5{
+.main-content p, .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5{
 	color: #FFFFFF;
+}
+.list-items p, .list-items h1, .list-items h2, .list-items h3, .list-items h4, .list-items h5{
+	color: #2D2D2D;
 }
 
 header{
@@ -79,7 +82,7 @@ figure{
 	margin: 0;
 }
 .separator{
-	border-top: 1px solid #456;
+	border-top: 1px solid rgba(159,188,215,1);
 	margin: 10px 0;
 }
 
@@ -114,6 +117,30 @@ input, textarea, select{
 	border: 1px solid #ccc;
     padding: 5px;
 }
+.tooltip-item{
+	position: relative;
+}
+.tooltip{
+	display: inline-block;
+    padding: 5px;
+    background: #2D2D2D;
+    font-size: 10px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 100%;
+    text-align: center;
+    left: -50%;
+    margin-bottom: 5px;
+}
+
+.tooltip-item .tooltip {
+	display: none;
+}
+
+.tooltip-item:hover .tooltip{
+	display: inline-block;
+}
 
 .center-align{
 	text-align: center;
@@ -144,7 +171,7 @@ input, textarea, select{
     cursor: pointer;
 }
 .button-link:hover{
-	background: #d01749;
+	background: rgba(159,188,215,1);
 	/*color: #000;*/
 }
 
@@ -168,9 +195,7 @@ input, textarea, select{
     font-weight: 400;
 }
 
-.main-parallax p{
-	margin: 0;
-}
+
 
 .main-parallax .slide{
 	position: relative;
@@ -193,6 +218,7 @@ input, textarea, select{
 .main-content.center{
 	width: 65%;
 	margin: 0 auto;
+	max-width: 860px;
 }
 .main-content .title{
 	font-size: 25px;
@@ -252,16 +278,17 @@ input, textarea, select{
 .list-items .item .button-section button{
 	padding: 10px;
 	border-radius: 0;
+	background: rgba(159,188,215,1);
 }
 
 /* Home */
 #home {
-	padding: 25% 10%;
+	padding: 15% 10%;
 	background-image: url("../img/bg1.jpg");   	
 }
 #habitaciones {
 	padding: 25% 10%;
-	background-image: url("../img/bg22.jpg"); 
+	background-image: url("../img/bg2.jpg"); 
 }
 #restaurant {
 	padding: 25% 10%;
@@ -269,11 +296,11 @@ input, textarea, select{
 }
 #nosotros {
 	padding: 25% 10%;
-	background-image: url("../img/bg44.jpg");
+	background-image: url("../img/bg4.jpg");
 }
 #contactanos {
 	padding: 25% 10%;
-	background-image: url("../img/bg55.jpg");
+	background-image: url("../img/bg5.jpg");
 }
 
 #section-nosotros .main-parallax .title, 
@@ -289,17 +316,56 @@ input, textarea, select{
 
 #section-habitacion .main-parallax .slide{
 	padding: 12% 10%;
-	background-image: url("../img/bg22.jpg");
-	height: 70vh;
-	min-height: 70vh;
+	background-image: url("../img/bg6.jpg");
+	height: 40vh;
+    min-height: 40vh;
 }
+#section-habitacion .main-content{
+	margin-bottom: 50px;
+}
+#section-habitacion .main-content .title{
+	color: #2D2D2D;
+}
+#section-habitacion form.form-inline{
+	background: none;
+    padding: 0;
+    font-size: 0;
+    width: 100%;
+    margin: 10px 0;
+}
+#section-habitacion form.form-inline fieldset{
+	margin: 0;
+	width: 21%;
+}
+#section-habitacion form.form-inline input{
+	padding: 7px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    min-height: 22px;
+    width: 100%;    
+}
+#section-habitacion form.form-inline button{
+	width: 16%;
+	background: rgba(159,188,215,1);
+}
+#section-habitacion .main-content .legend > span{
+	font-size: 24px;
+    color: #9c9c9c;
+    margin-right: 5px;
+    display: inline-block;
+}
+#section-habitacion .main-content .legend span:last-child{
+	margin-right: 0;
+}
+
 
 /* Restaurant */
 #section-restaurant .main-parallax .slide{
 	padding: 12% 10%;
-	background-image: url("../img/bg22.jpg");
-	height: 70vh;
-	min-height: 70vh;
+	background-image: url("../img/bg7.jpg");
+	height: 40vh;
+    min-height: 40vh;
 }
 
 #section-restaurant .main-content{
@@ -309,13 +375,17 @@ input, textarea, select{
     padding: 20px;
 }
 
+#section-restaurant .main-content div{
+	margin-bottom: 30px;
+}
+
 /* Nosotros */
 #section-nosotros{
 	text-align: center;
 }
 #section-nosotros .main-parallax .slide{
 	padding: 12% 10%;
-	background-image: url("../img/bg22.jpg");
+	background-image: url("../img/bg8.jpg");
 }
 
 #section-nosotros .main-parallax .slide figure{
@@ -340,7 +410,9 @@ input, textarea, select{
 }
 #section-contactanos .main-parallax .slide{
 	padding: 12% 10%;
-	background-image: url("../img/bg22.jpg");
+	background-image: url("../img/bg9.jpg");
+	height: 80vh;
+    min-height: 80vh;
 }
 
 #section-contactanos .main-content{
@@ -351,21 +423,24 @@ input, textarea, select{
 #section-contactanos .main-content>div{
 	width: 70%;
     margin: 0 auto;
+    margin: 10px auto 40px auto;
 }
 #section-contactanos .main-content .contact-form, #section-contactanos .main-content .map{
 	display: inline-block;
 	width: 49%;
-	padding: 15px 0;
+	vertical-align: top;
 }
 #section-contactanos input, #section-contactanos textarea{
 	width: 100%;
 	font-size: 16px;
 	padding: 7px;
 	margin-bottom: 5px;
+	width: calc(100% - 14px);
 }
 
 #section-contactanos .contact-form button{	
 	background: rgba(159, 188, 215, 1);
+	float: right;
 }
 
 #section-contactanos .contact-form button:hover{
@@ -392,6 +467,7 @@ input, textarea, select{
     left: 2px;
     width: 26px;
     z-index: -1;
+    height: 98%;
 }
 
 #section-contactanos .info p{
