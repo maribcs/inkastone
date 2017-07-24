@@ -102,7 +102,7 @@ form.form-inline label{
     margin-bottom: 5px;
 }
 
-button{
+button, a.button{
 	border: none;
     padding: 10px 15px;
     font-size: 14px;   
@@ -111,6 +111,8 @@ button{
     cursor: pointer;
     background: #CCCCCC;
     color: #000000;
+    display: inline-block;
+    text-decoration: none;
 }
 
 input, textarea, select{
@@ -122,7 +124,7 @@ input, textarea, select{
 }
 .tooltip{
 	display: inline-block;
-    padding: 5px;
+    padding: 7px;
     background: #2D2D2D;
     font-size: 10px;
     color: #FFFFFF;
@@ -130,8 +132,19 @@ input, textarea, select{
     position: absolute;
     bottom: 100%;
     text-align: center;
-    left: -50%;
-    margin-bottom: 5px;
+    left: 0;
+    margin-bottom: 10px;
+}
+.tooltip:before{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 7px;
+    border-left: 7px solid transparent;
+    border-top: 7px solid #2d2d2d;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
 }
 
 .tooltip-item .tooltip {
@@ -275,10 +288,31 @@ input, textarea, select{
 	font-size: 40px;
 }
 
-.list-items .item .button-section button{
+.list-items .item .button-section button, 
+.list-items .item .button-section .button{
 	padding: 10px;
 	border-radius: 0;
 	background: rgba(159,188,215,1);
+}
+
+.legend [class^="icon-"]{
+	font-size: 24px;
+    color: #9c9c9c;
+    margin-right: 5px;
+    display: inline-block;
+}
+.legend span:last-child{
+	margin-right: 0;
+}
+
+.back-arrow{
+	display: inline-block;
+    text-decoration: none;
+    color: #2578cc;
+    font-size: 30px;
+    position: absolute;
+    right: 100%;
+    top: 25px;
 }
 
 /* Home */
@@ -306,7 +340,8 @@ input, textarea, select{
 #section-nosotros .main-parallax .title, 
 #section-contactanos .main-parallax .title, 
 #section-habitacion .main-parallax .title,
-#section-restaurant .main-parallax .title
+#section-restaurant .main-parallax .title,
+#section-habitacion-detalle .main-parallax .title
 {
 	color: #2D2D2D;
 	text-shadow: none;
@@ -349,14 +384,108 @@ input, textarea, select{
 	width: 16%;
 	background: rgba(159,188,215,1);
 }
-#section-habitacion .main-content .legend > span{
-	font-size: 24px;
-    color: #9c9c9c;
-    margin-right: 5px;
-    display: inline-block;
+
+/* Habitacion detalle */
+
+#section-habitacion-detalle .main-parallax .slide{
+	padding: 12% 10%;
+	background-image: url("../img/bg6.jpg");
+	height: 40vh;
+    min-height: 40vh;
 }
-#section-habitacion .main-content .legend span:last-child{
-	margin-right: 0;
+#section-habitacion-detalle .main-content{
+	margin-bottom: 50px;
+	color: #2D2D2D;
+	padding: 10px;
+	min-width: 860px;
+
+	position: relative;
+}
+#section-habitacion-detalle .main-content article{
+	width: 560px;
+}
+#section-habitacion-detalle .main-content article figure img{
+	width: 100%;
+}
+#section-habitacion-detalle .main-content .title,
+#section-habitacion-detalle .main-content p{
+	color: #2D2D2D;
+}
+
+#section-habitacion-detalle .main-content table{
+	border-collapse: collapse;
+}
+
+#section-habitacion-detalle .main-content table td{
+	border-bottom: 1px solid #456;
+	padding: 20px 10px;
+}
+#section-habitacion-detalle .main-content table td.label{
+	font-weight: bold;
+}
+#section-habitacion-detalle .main-content table ul{
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#section-habitacion-detalle .main-content .legend {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#section-habitacion-detalle .main-content .legend li{
+	margin-bottom: 7px;
+}
+
+#section-habitacion-detalle .main-content .legend [class^="icon-"]{
+	margin-right: 10px;
+}
+
+#section-habitacion-detalle .main-content .form-float{
+	width: 230px;
+    background: #000;
+    padding: 20px;
+    color: #575757;
+
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+#section-habitacion-detalle .main-content .form-float .caption{
+	margin-bottom: 20px;
+	padding-left: 15px;
+    border-left: 1px solid #9fbcd7;
+}
+#section-habitacion-detalle .main-content .form-float .caption p{
+	margin: 5px;
+	color: #575757;
+}
+#section-habitacion-detalle .main-content .form-float .caption p:nth-child(2n){
+	font-size: 30px;
+}
+
+#section-habitacion-detalle .main-content .form-float fieldset{
+	border: 1px solid rgba(159,188,215,1);
+	border-bottom: none;
+}
+
+#section-habitacion-detalle .main-content .form-float fieldset:last-of-type{
+	border-bottom: 1px solid rgba(159,188,215,1);
+}
+
+#section-habitacion-detalle .main-content .form-float input{
+	padding: 7px;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+}
+
+#section-habitacion-detalle .main-content .form-float button{
+	background: rgba(159,188,215,1);
+    width: 100%;
+    margin-top: 20px;
 }
 
 
